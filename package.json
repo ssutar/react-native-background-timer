@@ -11,6 +11,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx force-resolutions",
     "eslint": "eslint *.js",
     "eslint:fix": "yarn eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,9 +37,18 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
+    "npm-force-resolutions": "^0.0.10",
     "prettier": "^2.5.1",
     "react": "17.0.2",
-    "react-native": "^0.66.4"
+    "react-native": "^0.67.1"
+  },
+  "resolutions": {
+    "ansi-regex": "^5.0.1",
+    "ws": "^7.4.6",
+    "xmldom": "github:xmldom/xmldom#0.7.5",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.3",
+    "node-fetch": "^2.6.7"
   },
   "husky": {
     "hooks": {
